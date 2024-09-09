@@ -6,8 +6,8 @@ abstract class Shape (_name : String) : Dimensionable {
     }
 
     fun printDetails() {
-        println("Name: $name")
+        println("\nName: $name")
         this.printDimensions()
-        println("Area: ${getArea()}")
+        println("Area: ${getArea()}\n")
     }
 }

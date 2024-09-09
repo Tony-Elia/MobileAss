@@ -2,18 +2,33 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
     val sq: Shape = Square("sq");
-    sq.setDimensions(5.0, 2.0);
+    print("Enter Square length: ");
+    val l = readln().toDouble();
+    print("Enter Square height: ");
+    val w = readln().toDouble();
+
+    sq.setDimensions(l, w);
     println(sq.printDetails());
 
     val circle: Shape = Circle("c");
-    circle.setDimensions(5.0);
+    print("Enter Circle radius: ");
+    val r = readln().toDouble();
+    circle.setDimensions(r);
     println(circle.printDetails());
 
     val tri: Shape = Triangle("tri");
-    tri.setDimensions(1.0, 1.0, 1.0);
+    print("Enter Triangle side 1: ");
+    val x = readln().toDouble();
+    print("Enter Triangle side 2: ");
+    val y = readln().toDouble();
+    print("Enter Triangle side 3: ");
+    val z = readln().toDouble();
+    tri.setDimensions(x, y, z);
     println(tri.printDetails());
 
     val equitri: Shape = EquilateralTriangle("equitri");
-    equitri.setDimensions(5.0);
+    print("Enter Equilateral triangle length: ");
+    val j = readln().toDouble();
+    equitri.setDimensions(j);
     println(equitri.printDetails());
 }
